@@ -5,4 +5,4 @@ COPY package*.json ./
 USER node
 RUN npm install
 COPY --chown=node:node . .
-CMD [ "node", "index.js" ]
+CMD [ "node", "src/index.js" ]
