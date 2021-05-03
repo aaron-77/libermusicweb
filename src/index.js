@@ -21,8 +21,8 @@ app.get('/Contact',function(req,res){
 let ip = "localhost";
 let port = 9000;
 
-app.listen(port,ip,()=>{
-    console.log("escuchando en  "+ip+" puerto "+port)
+app.listen(port,()=>{
+    console.log("escuchando en puerto "+port)
     console.log("\n"+path.resolve(__dirname,'public','Contact.html'));
 
 })
