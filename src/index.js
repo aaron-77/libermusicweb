@@ -18,8 +18,8 @@ app.get('/About',function(req,res){
 app.get('/Contact',function(req,res){
     res.sendFile(path.resolve(__dirname,'public','Contact.html'));
 })
-let ip = "127.0.0.1";
-let port = 4000;
+let ip = "localhost";
+let port = 9000;
 
 app.listen(port,ip,()=>{
     console.log("escuchando en  "+ip+" puerto "+port)
